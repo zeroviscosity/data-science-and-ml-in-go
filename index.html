@@ -1,50 +1,155 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Data Science and Machine Learning in Go</title>
+        <title>Data Science and Machine Learning in Go</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/zv.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>Data Science and Machine Learning in Go</h1>
+                    <p>
+                        <a href="https://www.meetup.com/go-toronto/events/234974649/" target="_blank">GoTO Meetup &ndash; November 24, 2016</a>
+                    </p>
+                </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                <section>
+                    <h2>Kent English</h2>
+                    <p>
+                        <a href="http://zeroviscosity.com/" target="_blank">http://zeroviscosity.com</a>
+                        <br>
+                        <a href="https://twitter.com/kentenglish" target="_blank">@kentenglish</a>
+                    </p>
+                    <h3>Senior Software Engineer at Uncharted Software</h3>
+                    <p>
+                        <a href="https://www.uncharted.software/" target="_blank">http://uncharted.software</a>
+                    </p>
+                </section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+                <section>
+                    <h2>R vs Python</h2>
+                    <img class="stretch" src="img/r-vs-python.png" alt="R vs Python">
+                    
+                    <aside class="notes">"The best thing about R is that it was written by statisticians. The worst thing about R is that it was written by statisticians." - Bow Cowgill</aside>
+                </section>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+                <section>
+                    <h2>Powerful but...</h2>
+                    <img class="stretch" src="img/turtle.gif" alt="Turtle">
+                </section>
+                
+                <section>
+                    <h2>How about Go?</h2>
+                    <img class="stretch" src="img/gopher-coding.gif" alt="Gopher Coding">
+                </section>
+
+                <section>
+                    <h2>gophernotes</h2>
+                    <img class="stretch" src="img/gophernotes.jpg" alt="gophernotes">
+                    <p>Go on the Jupyter Notebook</p>
+                </section>
+
+                <section>
+                    <h2>gonum</h2>
+                    <img class="stretch" src="img/gonum.png" alt="gonum">
+                    <p>Linear algebra (LAPACK/BLAS), stats, matrix, graph, plotting, optimization, etc.</p>
+                </section>
+
+
+                <section>
+                    <h2>GoLearn</h2>
+                    <img class="stretch" src="img/go-learn.jpg" alt="GoLearn">
+                    <p>ML for Go: clustering, linear/logistic regression, random forest, etc.</p>
+                </section>
+
+                <section>
+                    <h2>TensorFlow</h2>
+                    <img class="stretch" src="img/tensorflow.png" alt="TensorFlow">
+                    <p>Numerical computation using data flow graphs</p>
+                    <p>Go bindings are in the works but not yet stable</p>
+                </section>
+
+                <section>
+                    <h2>Glow</h2>
+                    <p>Easy-to-use distributed computation system written in Go</p>
+                    <h2>Gleam</h2>
+                    <p>Distributed map/reduce system written in Go and LuaJIT</p>
+                </section>
+
+                <section>
+                    <h2>gRPC</h2>
+                    <img class="stretch" src="img/grpc.png" alt="gRPC">
+                    <p>RPC with Protocol Buffers</p>
+                </section>
+
+                <section>
+                    <h2>Also...</h2>
+                    <ul>
+                        <li><a href="https://github.com/chewxy/gorgonia" taregt="_blank">Gorgonia</a>: ML in the vein of Theano/TensorFlow</li>
+                        <li><a href="https://github.com/kniren/gota" taregt="_blank">Gota</a>: Dataframes and data wrangling</li>
+                        <li><a href="https://github.com/kevinschoon/fit" taregt="_blank">Fit</a>: Toolkit for exploring and manipulating datasets</li>
+                        <li><a href="https://github.com/sajari/word2vec" taregt="_blank">word2vec</a>: Perform computations in word2vec binary models</li>
+                        <li><a href="https://github.com/scipipe/scipipe" taregt="_blank">SciPipe</a>: Scientific workflow system inspired by Flow-based Programming</li>
+                        <li>and on and on...</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Caveats</h2>
+                    <ul>
+                        <li>Early days</li>
+                        <li>Lack of libraries</li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <h2>However...</h2>
+                    <p>Enthusiastic and prolific community</p>
+                </section>
+
+                <section>
+                    <h2>Resources</h2>
+                    <ul>
+                        <li>#data-science on Gopher Slack</p>
+                        <li>
+                            <a href="https://github.com/gopherds/resources" target="_blank">GopherDS Resources</a> - curated lists of blogs, conferences, tooling, packages, etc.
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>

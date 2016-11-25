@@ -1,0 +1,32 @@
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$gopherColor: #6AD7E5;
+$backgroundColor: #333;
+
+$linkColor: $gopherColor;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingTextShadow: none;
+$headingTextTransform: none;
+$selectionBackgroundColor: $gopherColor;
+$mainFontSize: 30px;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
